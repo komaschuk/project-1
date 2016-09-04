@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700';
 /**
  * Reset some basic elements
  */
@@ -19,6 +20,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
 /**
@@ -66,23 +68,6 @@ li > ol {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-}
-
-/**
- * Links
- */
-a {
-  color: #2a7ae2;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #1756a9;
-}
-
-a:hover {
-  color: #111;
-  text-decoration: underline;
 }
 
 /**
@@ -395,4 +380,24 @@ pre > code {
   .post-content h4 {
     font-size: 18px;
   }
+}
+
+.header {
+  font-size: 0;
+  text-align: center;
+}
+
+.header__item {
+  display: inline-block;
+  width: calc(100%/4);
+  background: #1a99aa;
+  color: #eee;
+  font-size: 18px;
+  padding: 20px 0;
+  text-decoration: none;
+  transition: background ease-out .25s;
+}
+
+.header__item:hover {
+  background: rgba(26, 153, 170, 0.85);
 }
