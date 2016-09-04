@@ -1,0 +1,16 @@
+- {
+    class: "main",
+    title: "Головна"
+}
+- {
+    class: "products",
+    title: "Послуги"
+}
+- {
+    class: "feedbacks",
+    title: "Відгуки"
+}
+- {
+    class: "contacts",
+    title: "Контакти"
+}
