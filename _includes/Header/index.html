@@ -7,7 +7,7 @@
     <section>
         <nav>
         {% for i in site.data.Header.config %}
-            <div class="{{ i.class }}">{{ i.title }}</div>
+            <div class="header__{{ i.class }}">{{ i.title }}</div>
         {% endfor %}
         </nav>
     </section>

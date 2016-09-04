@@ -40,11 +40,8 @@ $on-laptop:        800px;
     }
 }
 
+@import "-vars";
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "_includes/Header/style"
-;
+@import "base";
+@import "layout";
+@import "_includes/Header/style";
