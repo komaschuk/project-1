@@ -1,0 +1,5 @@
+<nav>
+    {% for i in site.data.NavBar.config %}
+        <a class="header__item header__item-{{ i.class }}" href="#">{{ i.title }}</a>
+    {% endfor %}
+</nav>

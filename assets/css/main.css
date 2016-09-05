@@ -9,6 +9,16 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+.page-content {
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  background: #F4F4F4;
+}
+
 /**
  * Basic styling
  */
@@ -21,6 +31,14 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 /**
@@ -400,4 +418,9 @@ pre > code {
 
 .header__item:hover {
   background: rgba(26, 153, 170, 0.85);
+}
+
+.footer {
+  background: #444;
+  height: 60px;
 }

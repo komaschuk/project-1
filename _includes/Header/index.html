@@ -5,10 +5,6 @@
         <div class="header__phone-numbers"></div>
     </section>
     <section>
-        <nav>
-        {% for i in site.data.Header.config %}
-            <a class="header__item header__item-{{ i.class }}" href="#">{{ i.title }}</a>
-        {% endfor %}
-        </nav>
+        {% include NavBar/index.html %}
     </section>
 </header>
