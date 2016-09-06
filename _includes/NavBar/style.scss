@@ -1,0 +1,33 @@
+.nav-bar {
+	font-size: 0;
+	text-align: center;
+
+	&__header {
+		& .nav-bar__item:hover {
+			background: #28a6b7;
+		}
+
+	}
+
+	&__footer {
+		width: 60%;
+		float: right;
+
+		& .nav-bar__item {
+			font-size: 14px;
+			color: #8e8c8c;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		width: calc(100%/4);
+		color: #eee;
+		font-size: 18px;
+		padding: 20px 0;
+	    line-height: 20px;
+		text-decoration: none;
+		transition: background ease-out .25s;
+	}
+
+}

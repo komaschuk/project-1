@@ -401,26 +401,40 @@ pre > code {
 }
 
 .header {
-  font-size: 0;
-  text-align: center;
-}
-
-.header__item {
-  display: inline-block;
-  width: calc(100%/4);
   background: #1a99aa;
-  color: #eee;
-  font-size: 18px;
-  padding: 20px 0;
-  text-decoration: none;
-  transition: background ease-out .25s;
-}
-
-.header__item:hover {
-  background: rgba(26, 153, 170, 0.85);
 }
 
 .footer {
   background: #444;
   height: 60px;
+}
+
+.nav-bar {
+  font-size: 0;
+  text-align: center;
+}
+
+.nav-bar__header .nav-bar__item:hover {
+  background: #28a6b7;
+}
+
+.nav-bar__footer {
+  width: 60%;
+  float: right;
+}
+
+.nav-bar__footer .nav-bar__item {
+  font-size: 14px;
+  color: #8e8c8c;
+}
+
+.nav-bar__item {
+  display: inline-block;
+  width: calc(100%/4);
+  color: #eee;
+  font-size: 18px;
+  padding: 20px 0;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background ease-out .25s;
 }
