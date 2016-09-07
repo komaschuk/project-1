@@ -21,3 +21,5 @@ github_username:  jekyll
 markdown: kramdown
 
 data_dir: ./_includes
+exclude: 
+  - node_modules
