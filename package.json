@@ -24,5 +24,8 @@
     "gulp-install": "^0.6.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "coriolan-ui": "^0.1.14"
   }
 }
