@@ -21,5 +21,6 @@ github_username:  jekyll
 markdown: kramdown
 
 data_dir: ./_includes
-exclude: 
-  - node_modules
+
+include: ['_pages']
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
