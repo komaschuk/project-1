@@ -3,19 +3,30 @@
     background: #F4F4F4;
 
     &__thumb{
-        @include ratio(100%,1100px,350px);
-        position: relative;
+        // @include ratio(100%,1100px,350px);
     }
 
     &__img{
-        position: absolute;
+        position: relative;
+        width: 100%;
         background: url('/assets/img/01.jpg');
         background-size: cover;
         background-position: 50% 50%;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        height: 500px;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate3d(-50%, -50%, 0);
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+            background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+        }
     }
 }
