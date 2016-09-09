@@ -49,17 +49,19 @@ gulp.task('sass', function () {
 /* Js */
 gulp.task('jsConcat', ['sass'], function() {
     return gulp.src([
-            'assets/js/vendor/*',
-            'assets/js/common/*'
+            '_js/lib/*',
+            '_js/vendor/*',
+            '_includes/**/*.js',
         ])
-        .pipe(concat('all.min.js'))
-        .pipe(gulp.dest('assets/app'));
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('assets/js'));
 });
 
 gulp.task('jsMin', ['jsConcat'], function() {
-    return gulp.src(['assets/app/all.min.js'])
+    return gulp.src(['assets/js/all.js'])
         .pipe(uglify())
-        .pipe(gulp.dest('assets/app'));
+        .pipe(concat('all.min.js'))
+        .pipe(gulp.dest('assets/js'));
 });
 
 /* Watch scss files for changes & recompile, watch html/md files, run jekyll & reload BrowserSync */
@@ -71,12 +73,12 @@ gulp.task('watch', ['jsMin', 'browser-sync'], function () {
     gulp.watch([
             '_layouts/*.html',
             '_includes/**/*.html',
+            '_includes/**/*.yml',
+            '_includes/**/*.js',
+            '_js/**/*',
             '_posts/**/*',
             '_data/*',
             'assets/img/**/*',
-            'assets/fonts/**/*',
-            'assets/js/**/*',
-            '_config.yml',
             '_config_dev.yml'
         ], ['jekyll-rebuild']);
 });

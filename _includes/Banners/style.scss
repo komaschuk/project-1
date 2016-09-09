@@ -5,6 +5,20 @@
     &__thumb{
         @include ratio(100%,1100px,350px);
         position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            border-color: transparent;
+            border-bottom-color: #000;
+            border-width: 0 10px 10px 10px;
+            border-style: solid;
+            z-index: 20;
+        }
     }
 
     &__img{
@@ -18,4 +32,16 @@
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
     }
+}
+
+.foo {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+.bar {
+    width: 100px;
+    height: 100px;
+    background: #000;
 }
