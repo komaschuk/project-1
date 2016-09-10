@@ -1,36 +1,15 @@
 .banners {
     flex: 1 0 auto;
     background: #F4F4F4;
+    overflow: hidden;
 
-    &__thumb{
-        // @include ratio(100%,1100px,350px);
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0px;
-            height: 0px;
-            border-color: transparent;
-            border-bottom-color: #000;
-            border-width: 0 10px 10px 10px;
-            border-style: solid;
-            z-index: 20;
-        }
-    }
-
-    &__img{
+    &__img {
         position: relative;
         width: 100%;
         background: url('/assets/img/01.jpg');
         background-size: cover;
         background-position: 50% 50%;
         height: 500px;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate3d(-50%, -50%, 0);
 
         &:before {
             content: '';
@@ -43,16 +22,31 @@
             background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
         }
     }
+
+    &__content {
+        margin-bottom: 60px;
+    }
 }
 
-.foo {
+.wrap {
+    padding: 30px;
+}
+
+.img-rg,
+.img-lf {
     width: 100px;
     height: 100px;
     background: #fff;
+    float: left;
 }
 
-.bar {
-    width: 100px;
-    height: 100px;
-    background: #000;
+.img-rg {
+    float: right;
+}
+
+.text {
+    width: 80%;
+    vertical-align: top;
+    color: darkcyan;
+    display: inline-block;
 }

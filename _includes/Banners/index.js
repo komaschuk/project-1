@@ -5,6 +5,7 @@ $(document).ready(function() {
         distance: '100px',
         easing: 'ease-in-out',
         scale: 1.1,
+        mobile: false,
         // rotate   : { z: 10 },
         // reset: false
     };
@@ -13,13 +14,21 @@ $(document).ready(function() {
         delay: 200,
         distance: '100px',
         easing: 'ease-in-out',
+        scale: 1.1,
+        mobile: true,
+    };
+    var text = {
+        origin: 'bottom',
+        delay: 500,
+        distance: '600px',
+        easing: 'ease-in-out',
         scale: 1.5,
-        // rotate   : { z: 10 },
-        // reset: false
+        mobile: true,
     };
 
     window.sr = ScrollReveal({ reset: true });
 
-    sr.reveal('.foo', fooReveal);
-    sr.reveal('.bar', barReveal);
+    sr.reveal('.img-lf', fooReveal);
+    sr.reveal('.img-rg', barReveal);
+    sr.reveal('.text', text);
 });
