@@ -17,14 +17,10 @@
     <body>
 
         {% include Header/index.html %}
-
-        <!-- <div class="page-content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </div> -->
-
-        {% include Banners/index.html %}
+        <div class="wrapper">
+            {% include Banners/index.html %}
+            {% include ProductList/index.html %}
+        </div>
         {% include Footer/index.html %}
 
          <script src="{{ site.baseurl }}/assets/js/all.js"></script>

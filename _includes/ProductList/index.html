@@ -1,0 +1,17 @@
+<div class="product-list">
+    {% for cover in site.static_files %}
+        {% if cover.path contains 'product-list' %}
+            <div class="product-list__item js-product-list__item">
+                <div class="product-list__container">
+                    <div class="product-list__thumb">
+                        <div class="product-list__img" style="background-image: url('{{ site.baseurl }}{{cover.path}}')"></div>
+                    </div>
+                    <div class="product-list__text">
+                        <span class="product-list__title">Quae quaecumque</span>
+                        <span class="product-list__description">Quae quaecumque muneribusque Asopida inplevit nomen mediae, in ante fatetur obstitit, satis mi stirpis venit indignis Menephron. Argolica Caeneus, eum tollens acie, et puellae dicta. Manu monstratum coepta rerum vos victor adest: animos misi vetaris. Et Panaque atque. Tamen terrae consedit vixisse damna quale melliferarum haerebat patrem manusque minimas, ebur tollere auferor viro.</span>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
