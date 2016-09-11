@@ -8,7 +8,7 @@
         background: url('/assets/img/banners/01.jpg');
         background-size: cover;
         background-position: 50% 50%;
-        height: 100vh;
+        height: 50vh;
 
         &:before {
             content: '';
@@ -20,27 +20,40 @@
             background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
             background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
         }
+
+        @include media(M) {
+            height: 100vh;
+        }
     }
 
     &__content {
         position: absolute;
-        bottom: 15%;
+        bottom: 50%;
         right: 0;
+        transform: translate3d(0, 50%, 0);
         color: #fff;
-        padding: 20px 30px;
+        padding: 0 30px;
         border-radius: 8px;
         max-width: 650px;
         opacity: 1;
+
+        @include media(M) {
+            bottom: 25%;
+        }
     }
 
     &__title {
         display: block;
-        font-size: 36px;
+        font-size: 26px;
         margin-bottom: 20px;
+
+        @include media(M) {
+            font-size: 36px;
+        }
     }
 
     &__description {
-        font-size: 24px;
+        font-size: 18px;
         color: rgba(#fff, .7);
     }
 }
