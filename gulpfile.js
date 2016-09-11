@@ -68,6 +68,7 @@ gulp.task('jsMin', ['jsConcat'], function() {
 gulp.task('watch', ['jsMin', 'browser-sync'], function () {
     gulp.watch([
         '_scss/*.scss',
+        '_scss/**/*.scss',
         '_includes/**/*.scss',
         ], ['sass']);
     gulp.watch([
@@ -79,6 +80,7 @@ gulp.task('watch', ['jsMin', 'browser-sync'], function () {
             '_posts/**/*',
             '_data/*',
             'assets/img/**/*',
+            'assets/fonts/**/*',
             '_config_dev.yml'
         ], ['jekyll-rebuild']);
 });
