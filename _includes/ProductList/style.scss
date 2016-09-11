@@ -1,6 +1,7 @@
 .product-list {
     padding: 20px 5%;
     background: #F4F4F4;
+    overflow: hidden;
     @include clearfix;
 
     @include media(M) {

@@ -1,17 +1,3 @@
 .header {
     background: $header-background;
-
-    [class^="icon-"] {
-        position: absolute;
-        color: #fff;
-        top: 20px;
-        right: 20px;
-        z-index: 100;
-        font-size: 28px;
-        cursor: pointer;
-
-        @include media(M) {
-            display: none;
-        }
-    }
 }

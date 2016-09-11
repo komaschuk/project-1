@@ -28,6 +28,26 @@
         }
     }
 
+    &__mobile-menu {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(0,-50%,0);
+
+        & .nav-bar__item {
+            display: block;
+            width: auto;
+            color: #fff;
+            padding: 40px 0;
+            opacity: 0;
+            transition: opacity .3s ease;
+
+            .mobile-menu__wrapper.is-open & {
+                opacity: 1;
+            }
+        }
+    }
+
     &__item {
         display: inline-block;
         width: calc(100%/4);
