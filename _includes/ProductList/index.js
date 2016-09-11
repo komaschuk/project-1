@@ -7,7 +7,7 @@ $(document).ready(function() {
         scale: 1,
         mobile: false,
         rotate   : { z: 10 },
-        // reset: false
+        reset: false
     };
 
     window.sr = ScrollReveal({ reset: true });
