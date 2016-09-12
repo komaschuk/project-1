@@ -2,7 +2,4 @@ node_modules
 _site
 .sass-cache
 .jekyll-metadata
-assets/js/all.js
-assets/js/all.min.js
-assets/css/main.css
-assets/css/main.css
+
