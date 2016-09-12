@@ -1,13 +1,14 @@
 .header {
     background: $header-background;
-	position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     z-index: 1000;
     transition: background .2s ease;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
 
     &.is-colored {
-    	background: #242424;
+        background: #242424;
     }
 }
