@@ -2358,11 +2358,17 @@ pre > code {
 }
 
 .header {
+  background: rgba(36, 36, 36, 0.6);
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   z-index: 1000;
+  transition: background .2s ease;
+}
+
+.header.is-colored {
+  background: #242424;
 }
 
 .nav-bar {
@@ -2372,7 +2378,6 @@ pre > code {
 
 .nav-bar__header {
   display: none;
-  background: rgba(36, 36, 36, 0.6);
   text-transform: uppercase;
 }
 
