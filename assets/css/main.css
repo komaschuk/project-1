@@ -2358,7 +2358,11 @@ pre > code {
 }
 
 .header {
-  background: #1a99aa;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-bar {
@@ -2368,10 +2372,8 @@ pre > code {
 
 .nav-bar__header {
   display: none;
-}
-
-.nav-bar__header .nav-bar__item:hover {
-  background: #28a6b7;
+  background: rgba(36, 36, 36, 0.6);
+  text-transform: uppercase;
 }
 
 @media (min-width: 754px) {

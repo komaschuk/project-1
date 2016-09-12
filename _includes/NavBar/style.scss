@@ -4,8 +4,11 @@
 
     &__header {
         display: none;
+        background: rgba(#242424, .6);
+        text-transform: uppercase;
+
         & .nav-bar__item:hover {
-            background: #28a6b7;
+            // background: #28a6b7;
         }
 
         @include media(M) {
