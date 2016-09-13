@@ -47,7 +47,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     var productItem = {
         origin: 'bottom',
-        delay: 400,
+        delay: 200,
         distance: '200px',
         easing: 'ease',
         scale: 1,
