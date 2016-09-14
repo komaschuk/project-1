@@ -1,6 +1,6 @@
 <nav class="nav-bar {{ include.class }}">
     {% for i in site.data.NavBar.config %}
-        <a class="nav-bar__item nav-bar__item-{{ i.class }}" href="javascript:void(0)">
+        <a class="nav-bar__item nav-bar__item-{{ i.class }}" href="{{ site.baseurl }}/{{ i.id }}">
         	<span class="nav-bar__title">{{ i.title }}</span>
         </a>
     {% endfor %}

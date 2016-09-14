@@ -1,16 +1,20 @@
 - {
-    class: "main",
+    id: "",
+    class: "home",
     title: "Головна"
 }
 - {
+    id: "products",
     class: "products",
     title: "Послуги"
 }
 - {
+    id: "feedbacks",
     class: "feedbacks",
     title: "Відгуки"
 }
 - {
+    id: "contacts",
     class: "contacts",
     title: "Контакти"
 }
