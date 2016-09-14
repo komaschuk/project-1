@@ -2777,3 +2777,8 @@ pre > code {
   opacity: 1;
   visibility: visible;
 }
+
+#map {
+  width: 100%;
+  height: 400px;
+}
