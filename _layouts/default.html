@@ -15,16 +15,13 @@
     </head>
 
     <body>
+        {{ content }}
 
-        {% include Header/index.html %}
-        <div class="wrapper">
-            {% include Banners/index.html %}
-            {% include ProductList/index.html %}
-        </div>
-        {% include Footer/index.html %}
-        {% include MobileMenu/index.html %}
 
          <script src="{{ site.baseurl }}/assets/js/all.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCer4lBegF4W6z4KnXXp3SJ-h66ENQJNHo&callback=initMap">
+        </script>
 
     </body>
 
