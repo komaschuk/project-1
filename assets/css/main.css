@@ -2789,7 +2789,7 @@ pre > code {
   position: relative;
 }
 
-.contacts__wrapper {
+.contacts__info {
   position: absolute;
   background: #fff;
   padding: 40px;
@@ -2803,13 +2803,13 @@ pre > code {
 }
 
 @media (min-width: 508px) {
-  .contacts__wrapper {
+  .contacts__info {
     left: 40px;
     transform: translate3d(0, 0, 0);
   }
 }
 
-.contacts__title {
+.contacts__info-title {
   font-size: 28px;
   font-style: italic;
 }
