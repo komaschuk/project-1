@@ -1,7 +1,7 @@
 .contacts {
     position: relative;
 
-    &__wrapper {
+    &__info {
         position: absolute;
         background: #fff;
         padding: 40px;
@@ -18,11 +18,11 @@
             left: 40px;
             transform: translate3d(0, 0, 0);
         }
-    }
 
-    &__title {
-        font-size: 28px;
-        font-style: italic;
+        &-title {
+            font-size: 28px;
+            font-style: italic;
+        }
     }
 
     &__phone {
